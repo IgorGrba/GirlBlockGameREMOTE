@@ -23,9 +23,14 @@ public class GameManager : MonoBehaviour
       DontDestroyOnLoad(this.gameObject);
    }
 
+   
+
 
    public void DecreaseItemCount()
    {
       itemCount--;
    }
+   
+   
+   
 }

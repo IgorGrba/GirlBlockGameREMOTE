@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (anim)
         {
-            anim.SetBool("isMoving", _isMoving);
+            anim.SetBool("Running", _isMoving);
         }
         if (Input.touchCount > 0)
         {
