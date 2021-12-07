@@ -7,11 +7,11 @@ using UnityEngine;
 public class TweenToPlayer : MonoBehaviour
 {
     [SerializeField] private Transform playerPosition;
-
+    [SerializeField] private float maxRange=0.7f;
 
     private void Start()
     {
-        Invoke("MoveToPlayer", 0);
+        Invoke("MoveToPlayer", UnityEngine.Random.Range(0,maxRange));
     }
 
     
