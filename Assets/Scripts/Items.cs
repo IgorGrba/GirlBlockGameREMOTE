@@ -13,6 +13,9 @@ public class Items : MonoBehaviour
     [SerializeField] private GameObject amazingText;
     [SerializeField] private GameObject levelCompletedText;
     [SerializeField] private GameObject level1;
+    
+    
+    [SerializeField] private GameObject arrow;
 
     [SerializeField] private Transform girlPosition;
 
@@ -61,6 +64,7 @@ public class Items : MonoBehaviour
      private  void ActivateDoor()
     {
         doorAnim.SetTrigger("DoorOpen");
+        arrow.SetActive(false);
     }
      
      private  void ActivatePlatform()
@@ -75,7 +79,7 @@ public class Items : MonoBehaviour
          confettiVFX.SetActive(true);
          amazingText.SetActive(true);
          levelCompletedText.SetActive(true);
-                
+
          itemsDuplicate.SetActive(false);
          items.SetActive(true);
          camera1.SetActive(false);

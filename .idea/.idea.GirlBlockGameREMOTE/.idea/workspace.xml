@@ -28,7 +28,6 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Diamond.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Items/Diamond1.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Items/GoldBar.cs" />
@@ -36,8 +35,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Items/Crown.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Items/ActivateItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Items.cs" />
       <option value="$PROJECT_DIR$/Assets/TweenToPlayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Items.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="21gaiuHFOIaaSjs9vddWW2VuHd0" />
@@ -94,6 +94,7 @@
       <workItem from="1638891489502" duration="3969000" />
       <workItem from="1638895583435" duration="838000" />
       <workItem from="1638896721434" duration="767000" />
+      <workItem from="1640100376910" duration="433000" />
     </task>
     <servers />
   </component>

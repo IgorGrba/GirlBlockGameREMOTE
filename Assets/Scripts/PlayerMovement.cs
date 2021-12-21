@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float movementSpeed=5;
     [SerializeField] private float rotationSpeed = 500;
 
+    [SerializeField] private GameObject textStart;
+
     Animator anim;
 
     private Touch _touch;
@@ -43,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
             if (_touch.phase == TouchPhase.Moved)
             {
                 _touchDown = _touch.position;
+                textStart.SetActive(false);
             }
 
             if (_touch.phase == TouchPhase.Ended)
