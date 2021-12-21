@@ -10,6 +10,8 @@ public class Items : MonoBehaviour
 {
 
     [SerializeField] private GameObject confettiVFX;
+
+    [SerializeField] private GameObject dollarBillBlast;
     [SerializeField] private GameObject amazingText;
     [SerializeField] private GameObject levelCompletedText;
     [SerializeField] private GameObject level1;
@@ -86,6 +88,7 @@ public class Items : MonoBehaviour
          camera2.SetActive(true);
          girlReal.SetActive(false);
          platformReset.DORotate(new Vector3(0f, 0f, 0f), 0);
+         dollarBillBlast.SetActive(true);
          girlClone.SetActive(true);
      }
      
