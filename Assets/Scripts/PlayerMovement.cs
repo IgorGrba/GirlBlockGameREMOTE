@@ -34,10 +34,14 @@ public class PlayerMovement : MonoBehaviour
             _touch = Input.GetTouch(0);
             if (_touch.phase == TouchPhase.Began)
             {
-                _dragStarted = true;
-                _isMoving = true;
-                _touchUp = _touch.position;
-                _touchDown = _touch.position;
+                if (Input.GetMouseButton(0))
+                {
+                    _dragStarted = true;
+                    _isMoving = true;
+                    _touchUp = _touch.position;
+                    _touchDown = _touch.position;
+                }
+                
             }
         }
         if (_dragStarted)
