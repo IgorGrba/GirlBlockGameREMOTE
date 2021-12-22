@@ -19,7 +19,7 @@ public class TweenToPlayer : MonoBehaviour
     void MoveToPlayer()
     {
         transform.DOMove(playerPosition.transform.position, 1f);
-        transform.DOScale(new Vector3(0.1f, 0.1f, 0.1f), 2f);
+        transform.DOScale(new Vector3(0.0001f, 0.0001f, 0.0001f), 2f);
         
         Destroy(gameObject, 1f);
     }
