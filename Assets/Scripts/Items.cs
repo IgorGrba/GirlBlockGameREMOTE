@@ -57,7 +57,7 @@ public class Items : MonoBehaviour
                 Invoke("ActivateDoor", 1f);
                 Invoke("ActivatePlatform", 1.5f);
                 Invoke("EndScreen", 4f);
-
+                Invoke("RestartLevel", 10f);
             }
         }
     }
@@ -90,6 +90,11 @@ public class Items : MonoBehaviour
          platformReset.DORotate(new Vector3(0f, 0f, 0f), 0);
          dollarBillBlast.SetActive(true);
          girlClone.SetActive(true);
+     }
+
+     private void RestartLevel()
+     {
+         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
      }
      
      
